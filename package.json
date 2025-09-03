@@ -1,5 +1,5 @@
 {
-  "name": "drtw",
+  "name": "jonahh-drtw",
   "version": "1.0.0",
   "description": "A set of utils I find useful and repetitive",
   "keywords": [
@@ -11,6 +11,9 @@
   "bugs": {
     "url": "https://github.com/Jonahh21/drtw/issues"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jonahh21/drtw.git"
@@ -18,11 +21,18 @@
   "license": "ISC",
   "author": "Jonahh21",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": ["npx tsc", "node test.js"]
+    "build": "tsup",
+    "test:dev": "node --loader ts-node/esm test-dev.ts",
+    "test": "npm run build && node dist/test.js"
   },
   "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsup": "^8.5.0",
     "typescript": "^5.9.2"
   }
 }
