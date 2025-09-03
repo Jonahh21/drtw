@@ -1,0 +1,25 @@
+{
+  "name": "drtw",
+  "version": "1.0.0",
+  "description": "A set of utils I find useful and repetitive",
+  "keywords": [
+    "dont-reinvent-the-wheel",
+    "utils",
+    "drtw"
+  ],
+  "homepage": "https://github.com/Jonahh21/drtw#readme",
+  "bugs": {
+    "url": "https://github.com/Jonahh21/drtw/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonahh21/drtw.git"
+  },
+  "license": "ISC",
+  "author": "Jonahh21",
+  "type": "commonjs",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test"
+  }
+}
