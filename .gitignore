@@ -1,0 +1,21 @@
+
+# Ignore everything except user-written source files
+node_modules/
+package-lock.json
+dist/
+*.tsbuildinfo
+*.log
+.DS_Store
+.env
+.vscode/
+
+# Ignore all generated files
+*.js
+*.js.map
+*.d.ts
+*.d.ts.map
+
+# Allow only user source files
+!index.ts
+!utils.ts
+!test.ts

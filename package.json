@@ -17,9 +17,12 @@
   },
   "license": "ISC",
   "author": "Jonahh21",
-  "type": "commonjs",
-  "main": "index.ts",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": ["npx tsc", "node test.js"]
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
   }
 }
