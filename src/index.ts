@@ -1,6 +1,5 @@
 import * as utils from "@modules/utils/utils.js"
 
-const index = {
+export {
     utils
 }
-export default index
