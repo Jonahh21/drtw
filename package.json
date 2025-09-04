@@ -1,6 +1,6 @@
 {
   "name": "jonahh21-drtw",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "A set of utils I find useful and repetitive",
   "keywords": [
     "dont-reinvent-the-wheel",
@@ -26,7 +26,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
-    "test": "npm run build && node dist/test.js"
+    "test": "npm run build && node dist/test.js",
+    "subir": "npm run build && npm publish"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.20",
